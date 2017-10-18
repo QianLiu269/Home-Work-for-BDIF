@@ -1,0 +1,6 @@
+> install.packages("rjson",repos="http://cran.us.r-project.org")
+> library("rjson")
+> json_file="http://crix.hu-berlin.de/data/crix.json"
+> json_data=fromJSON(file=json_file)
+> crix_data_frame=as.data.frame(json_data)
+> crix_data_frame
